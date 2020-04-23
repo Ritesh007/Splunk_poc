@@ -1,5 +1,7 @@
 #########################################################################################
-# Runs every minute and collects the events from SQS and drops in S3
+# Runs every minute and collects the events from SQS and drops in S3 ,and
+# deletes the ported events in SQS.
+#
 # Lambda config - 
 #          Cloudwatch bridge with rate(1 minute) to run every minute
 #          Memory 512MB
